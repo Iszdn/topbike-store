@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    margin: 0;
+}
+h3{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: none;
+    border: none;
+    border-color: #000;
+    display: inline-block;
+}
+ul,ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

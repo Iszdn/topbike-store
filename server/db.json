@@ -1,0 +1,49 @@
+{
+  "logo": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279"
+    }
+  ],
+  "logonav": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product14.jpg?v=1608083545",
+      "tittle":"HOCALISS Ultralight Bike Helmets.",
+      "price":56
+    },
+    {
+      "id": 2,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1608083493",
+      "tittle":"Schwinn Thrasher Bike Helmet.",
+      "price":120
+    },
+    {
+      "id": 3,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
+      "tittle":"Juin Tech M1 Brake Kit",
+      "price":96
+    },
+    {
+      "id": 4,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product11.jpg?v=1608083590",
+      "tittle":"BlueSunshine Brake Kit",
+      "price":56
+    },
+    {
+      "id": 5,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product10.jpg?v=1608083041",
+      "tittle":"ICAN 50mm Carbon Road Bike Wheels",
+      "price":550
+    }
+ 
+
+  
+  ]
+}

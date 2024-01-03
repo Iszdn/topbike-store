@@ -1,0 +1,134 @@
+#navbar{
+    background: rgba(0, 0, 0, 0.8);
+    .navi{
+         padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+     .logonav{
+       height: 31px;
+       img{
+        height: 100%;
+       }
+    }
+    .navigation{
+        .navigations{
+            display: flex;
+            gap: 60px;
+            .drop{
+                font-size: 22px;
+                font-weight: 500;
+                position: relative;
+                transition: all 0.6s;
+                cursor: pointer;
+                .list-woman{
+                    display: none;
+                    top: 58px;
+                    position: absolute;
+                  opacity: 0;
+    background-color: #fff;
+    height: auto;
+    padding: 30px;
+    box-shadow: 7px 6px 40px #ccccdf29;
+    transition: all .5s ease;
+    border-radius: 0;
+    left: -425px;
+    margin-top: 1px;
+    .nn{
+        margin-top: 10px;
+        transition: all 0.5s;
+    }
+    .nn:hover{
+        box-shadow: 0 0 10px #0000002e;
+        transition: all 0.5s;
+    }
+                }
+                        
+            &:hover{
+                    color: var(--main--color);
+                    transition: all 0.6s;
+                }
+                .home{
+                    width: 70% !important;
+                }
+                .shop{
+                    width: 100%;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+                }
+                .featured{
+                    width: 50%;
+                    left: 40% !important;
+                }
+                .pages{
+                    width: 60% !important;
+                    left: 29% !important;
+                
+                }
+                .blogs{
+                    width: 70%;
+                    left: 20% !important;
+                }
+            }
+            .drop:hover .list-woman{
+                transition: all .5s ease;     
+  display: block;
+  opacity: 1;
+   visibility: visible;
+                 } 
+            .drop::before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background-color: var(--main--color);
+                transition: width 0.6s ease; 
+            }
+            .drop:hover::before {
+                width: 100%;
+            }
+            .drop{
+              .dropdown-menu{
+                .shop-drop{                   
+                    ul{ 
+                       
+                        a{
+                              font-size: 23px; 
+                              transition: all .25s ease-in-out;
+                              border-bottom: 1px solid var(--main--color);
+                              margin-bottom: 30px !important;
+                              &:hover{
+                                color: var(--main--color);
+    
+                               } 
+                            }
+                        li{
+                            transition: all .25s ease-in-out;
+                           font-size: 15px;
+                           color: #6e6e6e;
+                           font-weight: 500;
+                           line-height: 28px;
+
+                           &:hover{
+                            color: var(--main--color);
+
+                           }
+                        }
+                    }
+                }
+              }  
+            }
+        }
+    }
+    .icons{
+        display: flex;
+        gap: 15px;
+        font-size: 26px;
+    }
+    }
+   
+   
+}

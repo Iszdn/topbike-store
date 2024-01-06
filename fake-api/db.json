@@ -1,0 +1,276 @@
+{
+  "logo": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/LOGO.png?v=1613575279"
+    }
+  ],
+  "logonav": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/files/Untitled-2.png?v=1613575289"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product14.jpg?v=1608083545",
+      "tittle":"HOCALISS Ultralight Bike Helmets.",
+      "price":56,
+      "category":"helmet"
+    },
+    {
+      "id": 2,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1608083493",
+      "tittle":"Schwinn Thrasher Bike Helmet.",
+      "price":120,
+      "category":"helmet"
+    },
+    {
+      "id": 3,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
+      "tittle":"Juin Tech M1 Brake Kit",
+      "price":96,
+      "category":"helmet"
+    },
+    {
+      "id": 4,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product11.jpg?v=1608083590",
+      "tittle":"BlueSunshine Brake Kit",
+      "price":56,
+      "category":"helmet"
+    },
+    {
+      "id": 5,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product10.jpg?v=1608083041",
+      "tittle":"ICAN 50mm Carbon Road Bike Wheels",
+      "price":550,
+      "category":"accessory"
+    }
+ 
+  ],
+  "bycicle-new": [
+{
+  "id": 6,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
+  "tittle":"RELEASE 2",
+  "price":"3.250",
+  "category":"bike",
+  "color":"black"
+},
+{
+  "id": 7,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
+  "tittle":"SYNC'R CARBON 29",
+  "price":3.550,
+  "category":"bike",
+  "color":"black"
+},
+{
+  "id": 8,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6_6d883936-4e26-4d9a-93b7-63837f78bf88.jpg?v=1608081784",
+  "tittle":"DiamondBlack Haanjo 7C Carbon",
+  "price":2.800,
+  "category":"bike",
+  "color":"blue"
+},
+{
+  "id": 9,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5_d2330394-8374-4080-86f6-d131dafef040.jpg?v=1608081728",
+  "tittle":"DiamondBlack Haanjo 8C Carbon",
+  "price":4.400,
+  "category":"bike",
+  "color":"orange"
+},
+{
+  "id": 10,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4_c8009f9f-cf65-4e2d-82b4-9ab18259b2fe.jpg?v=1608081655",
+  "tittle":"DiamondBlack Haanjo 3",
+  "price":1.100,
+  "category":"bike",
+  "color":"green"
+},
+{
+  "id": 11,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612",
+  "tittle":"DiamondBlack Haanjo 4",
+  "price":1.140,
+  "category":"bike",
+  "color":"blue"
+},
+{
+  "id": 12,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2_4cfbe3cb-7764-4ab9-86cb-533420f5f5d1.jpg?v=1608081214",
+  "tittle":"DiamondBlack Haanjo 5",
+  "price":1.1800,
+  "category":"bike",
+  "color":"violet"
+},
+{
+  "id": 13,
+  "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.jpg?v=1608081158",
+  "tittle":"DiamondBlack Haanjo 6C Carbon",
+  "price":2.400,
+  "category":"bike",
+  "color":"green"
+}
+
+
+  ],
+
+  "news": [
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post2_1024x1024.jpg?v=1607478478",
+      "title":"Outdoor Adventures – Fun and Healthy",
+      "desc":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+      "data":8,
+      "month":"dec"
+    },
+    {
+      "id": 2,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post1_1024x1024.jpg?v=1607478360",
+      "title":"You Can Save an Average of $544 on Expenses Annually",
+      "desc":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+      "data":8,
+      "month":"dec"
+    },
+    {
+      "id": 3,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/articles/blog-post3_1024x1024.jpg?v=1607478877",
+      "title":"One Week in Bali: A Great Trip for a Lifetime to Choose",
+      "desc":"In the dark, cold winter, it’s easy to stay cooped up and fall out of our exercise routines. However, the longer days...",
+      "data":8,
+      "month":"dec"
+    }
+  ],
+  "product-shop":[
+    {
+      "id": 1,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product14.jpg?v=1608083545",
+      "tittle":"HOCALISS Ultralight Bike Helmets.",
+      "price":56,
+      "category":"helmet"
+    },  
+    {
+      "id": 2,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product12.jpg?v=1608083674",
+      "tittle":"Juin Tech M1 Brake Kit",
+      "price":96,
+      "category":"accessory"
+    },
+    {
+      "id": 3,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product11.jpg?v=1608083590",
+      "tittle":"BlueSunshine Brake Kit",
+      "price":56,
+      "category":"accessory"
+    },
+    {
+      "id": 4,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product10.jpg?v=1608083041",
+      "tittle":"ICAN 50mm Carbon Road Bike Wheels",
+      "price":550,
+      "category":"accessory"
+    },
+    {
+      "id": 5,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
+      "tittle":"RELEASE 2",
+      "price":"3.250",
+      "category":"bike",
+      "color":"black"
+    },
+    {
+      "id": 6,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product16_f996b4d3-b7d2-4a6e-9fbd-a430d3143e19.jpg?v=1608082060",
+      "tittle":"SYNC'R CARBON 29",
+      "price":3.550,
+      "category":"bike",
+      "color":"black"
+    },
+    {
+      "id": 7,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/7.jpg?v=1607317014",
+      "tittle":"Suntour Epixon Epicon XC Air Fork",
+      "price":235,
+      "category":"accessory",
+      "color":"black  "
+    },
+    {
+      "id": 8,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product13.jpg?v=1608083493",
+      "tittle":"Schwinn Thrasher Bike Helmet.",
+      "price":120,
+      "category":"helmet"
+    },
+    {
+      "id": 9,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product6_6d883936-4e26-4d9a-93b7-63837f78bf88.jpg?v=1608081784",
+      "tittle":"DiamondBlack Haanjo 7C Carbon",
+      "price":2.800,
+      "category":"bike",
+      "color":"blue"
+    },
+    {
+      "id": 10,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product5_d2330394-8374-4080-86f6-d131dafef040.jpg?v=1608081728",
+      "tittle":"DiamondBlack Haanjo 8C Carbon",
+      "price":4.400,
+      "category":"bike",
+      "color":"orange"
+    },
+    {
+      "id": 11,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product9.jpg?v=1608083009",
+      "tittle":"SunRise Bike Full Carbon Fiber Road Rims",
+      "price":1.200,
+      "category":"accessory",
+      "color":"green"
+    },
+    {
+      "id": 12,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product4_c8009f9f-cf65-4e2d-82b4-9ab18259b2fe.jpg?v=1608081655",
+      "tittle":"DiamondBlack Haanjo 3",
+      "price":1.100,
+      "category":"bike",
+      "color":"green"
+    },
+    {
+      "id": 13,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612",
+      "tittle":"DiamondBlack Haanjo 4",
+      "price":1.140,
+      "category":"bike",
+      "color":"blue"
+    },
+    {
+      "id": 14,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product2_4cfbe3cb-7764-4ab9-86cb-533420f5f5d1.jpg?v=1608081214",
+      "tittle":"DiamondBlack Haanjo 5",
+      "price":1.1800,
+      "category":"bike",
+      "color":"violet"
+    },
+    {
+      "id": 15,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/product1.jpg?v=1608081158",
+      "tittle":"DiamondBlack Haanjo 6C Carbon",
+      "price":2.400,
+      "category":"bike",
+      "color":"green"
+    },
+   
+    {
+      "id": 16,
+      "image": "https://topbike-store-demo.myshopify.com/cdn/shop/products/8.1.jpg?v=1607324115",
+      "tittle":"BIKES MTB 27.5 - MAXXLITE - AIR - REMOTE - WINNER",
+      "price":100,
+      "category":"accessory",
+      "color":"orange"
+    }
+    
+  ]
+
+
+}

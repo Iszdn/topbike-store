@@ -1,0 +1,24 @@
+.timer{
+    padding-top: 30px;
+    .labelexpired{
+        li{
+            display: inline-block;
+            font-size: 16px;
+            width: 130px;
+            height: 130px;
+            font-weight: 400;
+            list-style-type: none;
+            background: #ffffff78;
+            margin: 20px;
+            padding-top: 25px;
+            font-weight: 500;
+            span{
+                color: var(--secondary--color);
+                display: block;
+                font-weight: 600;
+                font-size: 36px;
+            }
+        }
+    }
+       
+   }

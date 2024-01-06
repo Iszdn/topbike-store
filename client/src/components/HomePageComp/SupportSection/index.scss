@@ -1,0 +1,44 @@
+#support{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+    .card-sup{
+        
+        padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: .5s all ease;
+.image-sup{
+    padding: 0 150px;
+img{
+    height: 46px;
+    width: auto;
+    margin: 0 auto;
+}
+}
+.info{
+    margin-top: 20px;
+   .title{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+   } 
+   
+}
+    }
+}
+@media screen and (max-width:400px){
+   #support{
+    .card-sup{
+        .image-sup{
+            padding: 0 100px;
+        } 
+    }
+   }
+}

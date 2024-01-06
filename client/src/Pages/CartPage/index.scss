@@ -1,0 +1,230 @@
+#cart {
+  padding: 150px 0;
+  .bg-breadcrumb {
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 130px;
+    height: auto;
+    background-image: url("https://topbike-store-demo.myshopify.com/cdn/shop/files/Banner-L2P.jpg?v=1613576665");
+    .title-page {
+      h2 {
+        font-size: 46px;
+        color: #010101;
+      }
+    }
+    .bread-crumb {
+      text-align: center;
+      padding: 6px 0 30px;
+      a:hover {
+        color: var(--main--color);
+      }
+    }
+  }
+  .page-cart {
+    margin-top: 70px;
+    .table-responsive {
+      .shop_table {
+        border: 1px solid #dee2e6;
+        .product-price, .product-quantity, .product-subtotal{
+            text-align: center;
+        }
+        thead {
+          tr {
+            th {
+                border-bottom: 0;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+                color: #000;
+                padding: 15px 20px;
+                border-left: 1px solid #dee2e6;
+            }
+          }
+        }
+        tbody {
+          tr {
+            .product-price, .product-subtotal{
+                color: #a8a8a8;
+            }
+            td {
+    border-top: 1px solid #dee2e6;
+            }
+            .product-thumbnail{
+                width: 140px;
+            }
+            .product-quantity{
+               .js-qty{
+                display: inline-block;
+    width: 90px;
+    border: 2px solid #000;
+    margin-right: 15px;
+    position: relative;
+    max-width: 100px;
+    min-width: 60px;
+    overflow: visible;
+                .qty_minus{
+                    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 42px;
+    left: unset;
+    top: unset;
+    border-top: 1px solid #000;
+    position: absolute;
+    transition: .3s;
+    color: #000;
+    padding: 0;
+    border: 0;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: transparent;  
+                }
+                .inpp{
+                    width: 45px;
+                    height: 60px;
+                    border: none;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #232529;
+                    font-weight: 600;
+                    border-right: 1px solid #232529;
+                    border-radius: 0;
+                }
+                .qty_plus{
+                    right: 0;
+                    height: 50%;
+                    top: 0;
+                    width: 42px;
+                    position: absolute;
+                    border: 0;
+                    background-color: transparent;
+                    border-bottom: 1px solid black;
+                   
+                    .fa{
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 8px;
+                    }
+                }
+               } 
+            }
+          }
+        }
+      }
+    }
+    .cart_totals{
+.cart-update{
+    margin: 20px 10px 20px 0;
+    display: inline-block;
+    input{
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 18px 65px;
+        border: none;
+        background-color: #000;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: .2em;
+        font-weight: 500;
+        position: relative;
+        border-radius: 0;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            background-color: var(--main--color);
+        }
+    }
+}
+.continue-shopping1{
+    margin: 20px 0 20px 10px;
+    display: inline-block;
+    a{
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 18px 65px;
+        border: none;
+        background: #ffab00;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: .2em;
+        font-weight: 500;
+        position: relative;
+        border-radius: 0;
+        transition: .3s;
+        &:hover{
+            background-color: #000;
+        }
+    }
+}
+.cart-check{
+    border: 1px solid #e3e3e3;
+    padding: 41px 40px 63px;
+    overflow: hidden;
+    margin: 30px 0;
+    .cart-title{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 30px;
+        color: #000;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 17px 20px 17px 0;
+    }
+    .total-checkout{
+        border-top: 1px solid #e3e3e3;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        tbody{
+            tr{
+                .cart-label{
+                    padding: 17px 0;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #000;
+                    font-weight: 400;
+                    
+                }
+                .cart-amount{
+                    padding: 17px 0;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #000;
+                    
+                }
+            }
+        }
+    }
+   .wc-proceed-to-checkout{
+    a{
+        margin-top: 15px;
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 18px 65px;
+        border: none;
+        background-color: #ffab00;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: .2em;
+        font-weight: 500;
+        position: relative;
+        border-radius: 0;
+        transition: .3s;
+&:hover{
+    background-color: #000;
+}
+    }
+   } 
+}
+    }
+  }
+}

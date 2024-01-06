@@ -1,15 +1,32 @@
 import './App.css'
 import '../src/assets/sass/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Layout/Footer';
-import Navbar from './Layout/Navbar';
+import { Link, Route, Routes } from 'react-router-dom';
+import Layout from './Layout/MainLayout';
+import HomePage from './Pages/HomePage';
+import NotFound from './Pages/NotFound';
+import ShopPage from './Pages/ShopPage';
+import Cart from './Pages/CartPage';
+import LoginPage from './Pages/LoginPage';
+import AccountPage from './Pages/Account';
 function App() {
   
 
   return (
     <>
-    <Navbar/>
-    <Footer/>
+<Routes>
+ <Route path='/' element={<Layout/>}>
+<Route path='/' element={<HomePage/>}/>
+<Route path='/shop' element={<ShopPage/>}/>
+<Route path='/cart' element={<Cart/>}/>
+<Route path='/login' element={<LoginPage/>}/>
+<Route path='/account' element={<AccountPage/>}/>
+
+<Route path='*' element={<NotFound/>}/>
+
+ </Route>
+</Routes>
+    
     </>
   )
 }

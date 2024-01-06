@@ -1,0 +1,15 @@
+#account{
+    text-align: center;
+    padding: 150px 0;
+    p{
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1px;
+a{
+   transition: .1s;
+   &:hover{
+    color: var(--main--color);
+   } 
+}
+    }
+}

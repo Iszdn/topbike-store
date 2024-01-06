@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
     const [logo, setLogo] = useState([])
     const [loading, setLoading] = useState(true)
@@ -28,7 +29,7 @@ const Footer = () => {
                     {
                         loading ? <p>loading...</p> : 
                         logo && logo.map(x=>(
-                            <img src={x.image} alt="" />
+                            <img key={x.id} src={x.image} alt="" />
                         ))
                     }
                     
@@ -50,16 +51,16 @@ const Footer = () => {
                 </div>
                 <ul>
                   <li>
-                    <a href="">Shopping</a>
+                    <Link to="/shop">Shopping</Link>
                   </li>
                   <li>
-                    <a href="">Bicycle</a>
+                    <Link to="/shop">Bicycle</Link>
                   </li>
                   <li>
-                    <a href="">Bicycle Accessory</a>
+                    <Link to="/shop">Bicycle Accessory</Link>
                   </li>
                   <li>
-                    <a href="">Helmet</a>
+                    <Link to="/shop">Helmet</Link>
                   </li>
                  
                 </ul>

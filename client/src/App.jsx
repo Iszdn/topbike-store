@@ -9,6 +9,7 @@ import ShopPage from './Pages/ShopPage';
 import Cart from './Pages/CartPage';
 import LoginPage from './Pages/LoginPage';
 import AccountPage from './Pages/Account';
+import SecondLayout from './Layout/SecondaryLayout';
 function App() {
   
 
@@ -17,6 +18,8 @@ function App() {
 <Routes>
  <Route path='/' element={<Layout/>}>
 <Route path='/' element={<HomePage/>}/>
+ </Route>
+ <Route path='/' element={<SecondLayout/>}>
 <Route path='/shop' element={<ShopPage/>}/>
 <Route path='/cart' element={<Cart/>}/>
 <Route path='/login' element={<LoginPage/>}/>
@@ -24,7 +27,7 @@ function App() {
 
 <Route path='*' element={<NotFound/>}/>
 
- </Route>
+</Route>
 </Routes>
     
     </>

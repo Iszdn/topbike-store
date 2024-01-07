@@ -6,12 +6,13 @@ import { IoSearch } from "react-icons/io5";
 import { FiHeart } from "react-icons/fi";
 import { GrShop } from "react-icons/gr";
 import BlogsDrop from "../../components/BlogsNav";
-const Navbar = () => {
+
+const SecondaryNavbar = () => {
   const [logonav, setLogonav] = useState([]);
   const [loading, setLoading] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   async function getLogo() {
-    const data = await fetch("http://localhost:3000/logonav");
+    const data = await fetch("http://localhost:3000/logo");
     const res = await data.json();
     setLogonav(res);
     setLoading(false);
@@ -34,7 +35,7 @@ const Navbar = () => {
   
   return (
    
-    <nav id="navbar" className={scrolled ? "scrolled" : ""}>
+    <nav id="navbar2" className={scrolled ? "scrolled2" : ""}>
         <div className="container navi">
       <div className="logonav">
         {loading ? (
@@ -234,4 +235,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SecondaryNavbar;

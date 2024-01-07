@@ -3,13 +3,17 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import router from './src/routers/user.js'
+import Productrouter from './src/routers/products.js'
 const app = express()
 
 app.use(express.json())
 dotenv.config()
 app.use(cors())
 
-app.use("/",router)
+app.use("/user",router)
+app.use("/products",Productrouter)
+
+
 const url=process.env.CONNECTION_URL.replace("<password>",process.env.PASSWORD)
 const PORT=process.env.PORT
 

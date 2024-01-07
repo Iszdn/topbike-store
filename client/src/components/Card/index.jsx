@@ -11,7 +11,7 @@ const Card = () => {
 
     const getData=async ()=>{
        try {
-        const res=await axios("http://localhost:3000/bycicle-new")
+        const res=await axios("http://localhost:5000/products")
         setData(res.data)
         setLoading(false)
        } catch (error) {

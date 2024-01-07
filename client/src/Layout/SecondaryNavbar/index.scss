@@ -1,14 +1,13 @@
-#navbar{
+#navbar2{
     transition: background-color 0.3s ease;
     position: fixed;
     width: 100%;
     z-index: 12;
-    // background: rgba(0, 0, 0, 0.8);
     .navi{
          padding: 25px 0px;
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: black;
      .logonav{
        height: 31px;
        img{
@@ -143,8 +142,9 @@
    
    
 }
-.scrolled{
-   background: rgba(0, 0, 0, 0.8); 
+.scrolled2{
+   background: rgba(255, 255, 255, 0.9); 
+   box-shadow: 0 2px 5px -2px #0000001a;;
 }
 @media screen and (max-width:1200px) {
     #navbar{

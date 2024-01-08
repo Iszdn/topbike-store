@@ -138,6 +138,24 @@
         display: flex;
         gap: 15px;
         font-size: 26px;
+        span{
+            position: relative;
+           .cirkle{
+            color: white;
+    background-color: var(--main--color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 14px;
+    top: 23px;
+    font-size: 16px;
+        } 
+        }
+        
     }
     }
    

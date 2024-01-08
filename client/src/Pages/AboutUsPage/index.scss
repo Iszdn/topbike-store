@@ -1,0 +1,117 @@
+#about-us{
+    padding: 100px 0;
+    .layout{
+        .bg-breadcrumb{
+            padding: 150px 0;
+            background-size: cover;
+            background-image: url("https://topbike-store-demo.myshopify.com/cdn/shop/files/slider2.jpg?v=1613576060");
+           h2{
+            font-size: 46px;
+            font-weight: 400;
+            color: #010101;
+            margin-bottom: 0.5rem;
+           }
+            .bread-crumb{
+                text-align: center;
+                padding: 6px 0 30px;
+                a{
+                    transition: .1s;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover{
+                    transition: .1s;
+                        color: var(--main--color);
+                    }
+                }
+              } 
+        }
+    }
+    .about-page{
+        padding-top: 66px;
+        padding-bottom: 90px;
+        .about-introduce{
+            .intro_image{
+                padding-bottom: 70px;
+                img{
+                    transition: .5s;
+
+                }
+                &:hover img{
+                    transform: scale(.95);
+                    transition: .5s;
+                    filter: grayscale(100%);
+                }
+            }
+           .intro_detail{
+            padding-bottom: 70px;
+            .info-intro{
+           .des_intro{
+            font-size: 17px;
+            color: #666;
+            text-align: left;
+            font-weight: 400;
+            margin-bottom: 1rem;
+           } 
+           .title_intro{
+            font-size: 36px;
+            color: #333;
+            text-align: left;
+            font-weight: 600;
+            line-height: 43px;
+            position: relative;
+            padding-bottom: 25px;
+            &::before{
+                content: "";
+                height: 2px;
+                width: 55px;
+                background: #ffab00;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+           } 
+           .content_intro{
+            margin-top: 35px;
+            line-height: 28px;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #666;
+            text-align: left;
+           }   
+            }
+           } 
+        }
+        .reasons{
+            background-image: url("https://topbike-store-demo.myshopify.com/cdn/shop/files/slider.jpg?v=1613576060");
+            padding-top: 130px;
+            padding-bottom: 130px;
+            background-size: cover;
+            background-position: center;
+           .title-servicebox{
+            h2{
+                font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 55px;
+    text-transform: unset;
+    &::before{
+        content: "";
+        height: 2px;
+        width: 55px;
+        background: #ffab00;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+            }
+    
+           } 
+        }
+    }
+}

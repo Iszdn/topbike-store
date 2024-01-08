@@ -10,6 +10,7 @@ import Cart from './Pages/CartPage';
 import LoginPage from './Pages/LoginPage';
 import AccountPage from './Pages/Account';
 import SecondLayout from './Layout/SecondaryLayout';
+import AboutUs from './Pages/AboutUsPage';
 function App() {
   
 
@@ -24,7 +25,7 @@ function App() {
 <Route path='/cart' element={<Cart/>}/>
 <Route path='/login' element={<LoginPage/>}/>
 <Route path='/account' element={<AccountPage/>}/>
-
+<Route path='/aboutus' element={<AboutUs/>}/>
 <Route path='*' element={<NotFound/>}/>
 
 </Route>

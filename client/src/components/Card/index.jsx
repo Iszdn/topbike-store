@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./index.scss"
 import axios from "axios"
 import { Link } from "react-router-dom";
 import { GoHeart } from "react-icons/go";
 import { GrShop } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
+import { BasketContext } from "../../context/BasketContext";
 const Card = () => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
-
+const [basket,addBasket] = useContext(BasketContext)
+console.log(basket);
     const getData=async ()=>{
        try {
         const res=await axios("http://localhost:5000/products")
@@ -47,7 +49,7 @@ const Card = () => {
                   </Link>
                 </div>
                 <div className="addcart addy">
-                <div className="tooltip">Add to Cart</div>
+                <div onClick={()=>addBasket(x)} className="tooltip">Add to Cart</div>
 
                   <Link>
                     <GrShop />

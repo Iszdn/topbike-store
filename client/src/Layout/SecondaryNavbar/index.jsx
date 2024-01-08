@@ -171,7 +171,7 @@ const SecondaryNavbar = () => {
         </ul>
         <ul className="col-lg-4 col-md-4">
             <a className="tit"> PRE - BUILD PAGES</a>
-            <li>About Us</li>
+            <li><Link to="/aboutus">About Us</Link></li>
             <li>About Us #2</li>
             <li>Contact Us</li>
             <li>Contact Us #2</li>
@@ -226,8 +226,8 @@ const SecondaryNavbar = () => {
       <div className="icons">
         <span><IoSearch /></span>
         <span><IoPersonOutline /></span>
-        <span><FiHeart /></span>
-        <span><GrShop /></span>
+        <span><Link><FiHeart /></Link><span className="cirkle">1</span></span>
+        <span><Link to="/cart"><GrShop /></Link><span className="cirkle">1</span></span>
       </div>
       </div>
     </nav>

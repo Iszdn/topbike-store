@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 import './index.css'
-import BasketProvider from './context/BasketContext.jsx';
+import { BasketProvider } from './context/BasketContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+   <BasketProvider>
     <BrowserRouter>
-    <BasketProvider>
     <App />
-    </BasketProvider>
     </BrowserRouter>
+   </BasketProvider> 
     
   </React.StrictMode>,
 )

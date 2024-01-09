@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./index.scss"
 import { Link } from 'react-router-dom'
 import { LiaAngleRightSolid } from "react-icons/lia";
+import { BasketContext } from '../../context/BasketContext';
 const Cart = () => {
+    const {basket,increaseBasket,decreaseBasket,deleteBasket} = useContext(BasketContext)
+    console.log(basket);
   return (
     <div id='cart'>
         {/* Layou start */}
@@ -39,39 +42,44 @@ const Cart = () => {
 {/* tbody start */}
 
 <tbody>
-    <tr className='cart_item'>
-        <td className='product-thumbnail'>
-            <Link>
-            <img src="https://topbike-store-demo.myshopify.com/cdn/shop/products/product11_small.jpg?v=1608083590" alt="" />
-            </Link>
-        </td>
-        <td className='product-name-thumb'>BlueSunshine Brake Kit</td>
-        <td className='product-price'>$56.00</td>
-        <td className='product-quantity'>
-            <div className="js-qty">
-                <button className='qty_minus'>
-<span className='fa fa-minus'>
--
-</span>
-                </button>
-                <div className='inpp'> 1 </div>
-                
-                <button className='qty_plus'>
-<span className='fa fa-plus'>
-+
-</span>
-                </button>
-            </div>
-        </td>
-        <td className='product-subtotal'>
-            <span>$56.00</span>
-        </td>
-        <td className='product-remove'>
-            <Link>
-            X
-            </Link>
-        </td>
-    </tr>
+    {
+        basket && basket.map(product=>
+            <tr className='cart_item'>
+            <td className='product-thumbnail'>
+                <Link>
+                <img src={product.image} alt="" />
+                </Link>
+            </td>
+            <td className='product-name-thumb'>{product.tittle}</td>
+            <td className='product-price'>${product.price}</td>
+            <td className='product-quantity'>
+                <div className="js-qty">
+                    <button onClick={()=>decreaseBasket(product)} className='qty_minus'>
+    <span  className='fa fa-minus'>
+    -
+    </span>
+                    </button>
+                    <div className='inpp'> {product.count} </div>
+                    
+                    <button onClick={()=>increaseBasket(product)} className='qty_plus'>
+    <span  className='fa fa-plus'>
+    +
+    </span>
+                    </button>
+                </div>
+            </td>
+            <td className='product-subtotal'>
+                <span>$56.00</span>
+            </td>
+            <td className='product-remove'>
+                <Link onClick={()=>deleteBasket(product)}>
+                X
+                </Link>
+            </td>
+        </tr>
+            )
+    }
+   
 </tbody>
 {/* tbody end */}
 
@@ -110,6 +118,7 @@ const Cart = () => {
 </div>
 {/* cart totals end */}
 </div>
+
 </section>
 {/* cart section  end */}
 

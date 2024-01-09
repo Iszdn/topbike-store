@@ -9,8 +9,7 @@ import { BasketContext } from "../../context/BasketContext";
 const Card = () => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
-const [basket,addBasket] = useContext(BasketContext)
-console.log(basket);
+    const {addBasket }=useContext(BasketContext)
     const getData=async ()=>{
        try {
         const res=await axios("http://localhost:5000/products")
@@ -31,7 +30,7 @@ console.log(basket);
         {
             loading ? <p>loading...</p> : (
                 data && data.map((x)=>(
-                  <div key={x.id} className="col-lg-3 col-md-4 col-6 product_item">
+                  <div key={x._id} className="col-lg-3 col-md-4 col-6 product_item">
         <div className="product-item-v1">
           <div className="product mb-15 engoj_grid_parent relative">
             <div className="img-product">
@@ -49,10 +48,12 @@ console.log(basket);
                   </Link>
                 </div>
                 <div className="addcart addy">
-                <div onClick={()=>addBasket(x)} className="tooltip">Add to Cart</div>
+                <div className="tooltip">Add to Cart</div>
 
-                  <Link>
-                    <GrShop />
+                  <Link onClick={()=>addBasket(x)}>
+                  
+                  <GrShop />
+
                   </Link>
                 </div>
                 <div className="quickview addy">

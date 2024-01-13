@@ -1,12 +1,12 @@
 import { Router } from 'express'
 
 import { adminAuth } from '../middleware/auth.js'
-import { UserLogin, UserRegister, deleteUser, getUser } from '../controllers/user.js'
+import {  userRegister, deleteUser, getUser, userLogin } from '../controllers/user.js'
 const router = Router()
 
 
-router.post("/register",UserRegister)
-router.post("/login",UserLogin)
+router.post("/register",userRegister)
+router.post("/login",userLogin)
 router.delete("/:id", adminAuth,deleteUser)
 router.get("/",getUser)
 

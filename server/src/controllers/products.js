@@ -40,3 +40,15 @@ export const deleteProduct= async(req,res)=>{
     }
 }
 
+// get by id 
+
+export const getById=async(req,res)=>{
+    try {
+        const {id}=req.params
+        const product=await Products.findById(id)
+        res.json(product)
+    } catch (error) {
+        res.status(500).json({ message: error })
+        
+    }
+}

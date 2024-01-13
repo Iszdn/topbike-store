@@ -9,7 +9,7 @@ const Footer = () => {
     const [logo, setLogo] = useState([])
     const [loading, setLoading] = useState(true)
     async function getLogo() {
-        const data=await fetch("http://localhost:3000/logo")
+        const data=await fetch("http://localhost:5000/logoblack")
         const res=await data.json()
         setLogo(res)
         setLoading(false)
@@ -29,7 +29,7 @@ const Footer = () => {
                     {
                         loading ? <p>loading...</p> : 
                         logo && logo.map(x=>(
-                            <img key={x.id} src={x.image} alt="" />
+                            <img key={x._id} src={x.image} alt="" />
                         ))
                     }
                     

@@ -2,9 +2,14 @@ import React from 'react'
 import "./index.scss"
 import { Link } from 'react-router-dom'
 import { FaSearch } from "react-icons/fa";
+import { Helmet } from 'react-helmet-async';
 const NotFound = () => {
   return (
-    <div id='not-found'>
+    <>
+    <Helmet>
+        <title>Error</title>
+      </Helmet>
+     <div id='not-found'>
 <div className="container">
     <div className="title">
         <h1>404</h1> 
@@ -23,6 +28,8 @@ const NotFound = () => {
    
 </div>
     </div>
+    </>
+   
   )
 }
 

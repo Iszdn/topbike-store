@@ -11,7 +11,7 @@ const BlogsDrop = () => {
   
     const getData = async () => {
       try {
-        const res = await axios('http://localhost:3000/blogs');
+        const res = await axios('http://localhost:5000/products');
         setData(res.data);
         setLoading(false);
       } catch (error) {
@@ -41,7 +41,7 @@ const BlogsDrop = () => {
         ) : (
           data &&
           data.map((x) => (
-            <div className="disss" key={x.id}>
+            <div className="disss" key={x._id}>
               <div className="dimg">
                 <div className="imaa">
                   <img src={x.image} alt="" />

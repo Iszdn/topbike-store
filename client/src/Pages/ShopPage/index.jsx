@@ -1,14 +1,34 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LiaAngleRightSolid } from "react-icons/lia";
 import { CiFilter } from "react-icons/ci";
 import { RxTriangleDown } from "react-icons/rx";
 import "./index.scss"
+import axios from "axios"
 import Card from '../../components/Card';
+import { Helmet } from 'react-helmet-async';
 const ShopPage = () => {
    const [open, setOpen] = useState(false)
    const [openFilter, setOpenFilter] = useState(false)
-   
+   const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [property, setProperty] = useState(null)
+
+    const getData=async ()=>{
+        try {
+         const res=await axios("http://localhost:5000/products")
+         setData(res.data)
+         setLoading(false)
+        } catch (error) {
+         console.log(error);
+        }
+     }
+ 
+     useEffect(() => {
+       getData()
+     }, [])
+
+
    const handleOpen=()=>{
 setOpen(!open)
    }
@@ -16,6 +36,10 @@ setOpen(!open)
     setOpenFilter(!openFilter)
    }
   return (
+    <>
+     <Helmet>
+        <title>Shop</title>
+      </Helmet>
     <div id='shop'>
 <div className="layout-products">
 <div className="title-page">
@@ -58,13 +82,13 @@ setOpen(!open)
         {
             open && 
              <ul className='dropdown-content'>
-            <li>Featured</li>
-            <li>Best Selling</li>
-            <li>Alphabetically, A-Z</li>
-            <li>Price, high to low</li>
-            <li>Price, low to high</li>
-            <li>Date, old to new</li>
-            <li>Date, new to old</li>
+            <li onClick={()=>setProperty({name:"tittle", asc:null})}>Featured</li>
+            <li onClick={()=>setProperty({name:"price", asc:false})}>Best Selling</li>
+            <li onClick={()=>setProperty({name:"tittle", asc:true})}>Alphabetically, A-Z</li>
+            <li onClick={()=>setProperty({name:"price", asc:false})}>Price, high to low</li>
+            <li onClick={()=>setProperty({name:"price", asc:true})}>Price, low to high</li>
+            <li onClick={()=>setProperty({name:"price", asc:false})}>Date, old to new</li>
+            <li onClick={()=>setProperty({name:"price", asc:true})}>Date, new to old</li>
         </ul> 
         }
       
@@ -161,12 +185,39 @@ setOpen(!open)
         </div>
     </div>
 }
-    
-<Card/>
+<div className='row'>
+     {
+            loading ? <p>loading...</p> : (
+                data && data
+                .sort((a,b)=>{
+                    if (property && property.asc===true) {
+                      return (a[property.name] > b[property.name] ) ? 1 :((b[property.name] > a[property.name]) ? -1 : 0 )
+                    }
+                    else if (property && property.asc===false){
+                        return (a[property.name] < b[property.name] ) ? 1 :((b[property.name] < a[property.name]) ? -1 : 0 )
+                    }
+                    else{
+                        return 0;
+                    }
+                })
+                .map((x)=>(
+
+<Card key={x._id} {...x}/>
+
+
+    ))
+                
+    )
+
+  
+}
+</div>
     </div>
 </section>
     
 </div>
+    </>
+   
 
   )
 }

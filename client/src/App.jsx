@@ -11,11 +11,16 @@ import LoginPage from './Pages/LoginPage';
 import AccountPage from './Pages/Account';
 import SecondLayout from './Layout/SecondaryLayout';
 import AboutUs from './Pages/AboutUsPage';
+import WishPage from './Pages/WihlistPage';
+import Details from './Pages/DetailsPage';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 function App() {
   
+const helmetContext = {};
 
   return (
     <>
+      <HelmetProvider context={helmetContext}>
 <Routes>
  <Route path='/' element={<Layout/>}>
 <Route path='/' element={<HomePage/>}/>
@@ -26,10 +31,16 @@ function App() {
 <Route path='/login' element={<LoginPage/>}/>
 <Route path='/account' element={<AccountPage/>}/>
 <Route path='/aboutus' element={<AboutUs/>}/>
+<Route path='/wishlist' element={<WishPage/>}/>
+<Route path='/:id' element={<Details/>}/>
 <Route path='*' element={<NotFound/>}/>
+
 
 </Route>
 </Routes>
+
+      </HelmetProvider>
+
     
     </>
   )

@@ -9,7 +9,7 @@ const [data, setData] = useState([])
 const [loading, setLoading] = useState(true)
 
 const getData=async ()=>{
-    const res=await axios("http://localhost:3000/news")
+    const res=await axios("http://localhost:5000/news")
     setData(res.data)
     setLoading(false)
 }

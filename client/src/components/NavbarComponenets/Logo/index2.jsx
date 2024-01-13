@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-const LogoNav = () => {
+const LogoNav2 = () => {
   const [logonav, setLogonav] = useState([]);
   const [loading, setLoading] = useState(true);
   async function getLogo() {
-    const data = await fetch("http://localhost:5000/logonav");
+    const data = await fetch("http://localhost:5000/logoblack");
     const res = await data.json();
     setLogonav(res);
     setLoading(false);
@@ -23,4 +23,4 @@ const LogoNav = () => {
   );
 };
 
-export default LogoNav;
+export default LogoNav2;

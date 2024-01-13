@@ -1,22 +1,31 @@
-import React, { useContext, useEffect, useState } from "react";
-import "./index.scss"
-import axios from "axios"
-import { Link } from "react-router-dom";
-import { GoHeart } from "react-icons/go";
+import React, { useContext } from 'react'
+import { WishlidtContext } from '../../context/WishlistContext'
+import { BasketContext } from '../../context/BasketContext'
+import { Link } from 'react-router-dom'
 import { GrShop } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
-import { BasketContext } from "../../context/BasketContext";
-import { WishlidtContext } from "../../context/WishlistContext";
-const Card = (x) => {
-    const {addBasket }=useContext(BasketContext)
-    const {addWish }=useContext(WishlidtContext)
-    
-    
+import "./index.scss"
+import { Helmet } from 'react-helmet-async';
+const WishPage = () => {
+const {wishlist,deleteWish}= useContext(WishlidtContext)
+const {addBasket}= useContext(BasketContext)
+
 
   return (
-   
-      
-                  <div  className="col-lg-3 col-md-4 col-6 product_item">
+    <>
+    <Helmet>
+        <title>Wishlist</title>
+      </Helmet>
+    
+    <div className="container">
+    <div className='wishlist'>
+        <h2>Wishlist</h2>
+        <div className="row">
+
+        
+{
+    wishlist && wishlist.map(x=>
+        <div key={x._id} className="col-lg-3 col-md-4 col-6 product_item">
         <div className="product-item-v1">
           <div className="product mb-15 engoj_grid_parent relative">
             <div className="img-product">
@@ -27,12 +36,7 @@ const Card = (x) => {
                 />
               </div>
               <div className="icons">
-                <div className="addwish addy">
-                <div className="tooltip">Add to Wishlist</div>
-                  <Link  onClick={()=>addWish(x)}>
-                    <GoHeart className="black"/>
-                  </Link>
-                </div>
+                
                 <div className="addcart addy">
                 <div className="tooltip">Add to Cart</div>
 
@@ -56,14 +60,19 @@ const Card = (x) => {
                 <p className="price-product">
                 ${x.price}
                 </p>
+                <Link onClick={()=>deleteWish(x)}>delete</Link>
             </div>
           </div>
         </div>
-      </div>    
-            
-      
-  
-  );
-};
+      </div>   
+    )
+}   
+</div>
+    </div>
+    </div>
+    </>
 
-export default Card;
+  )
+}
+
+export default WishPage

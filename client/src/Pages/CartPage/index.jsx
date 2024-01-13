@@ -3,11 +3,21 @@ import "./index.scss"
 import { Link } from 'react-router-dom'
 import { LiaAngleRightSolid } from "react-icons/lia";
 import { BasketContext } from '../../context/BasketContext';
+import { Helmet } from 'react-helmet-async';
 const Cart = () => {
-    const {basket,increaseBasket,decreaseBasket,deleteBasket} = useContext(BasketContext)
-    console.log(basket);
-  return (
-    <div id='cart'>
+    const {basket,increaseBasket,decreaseBasket,deleteBasket,totalPrice} = useContext(BasketContext)
+  
+    const calculateProductTotal = (product) => {
+        return product.price * product.count;
+      };
+
+
+    return (
+    <>
+    <Helmet>
+        <title>Cart</title>
+      </Helmet>
+     <div id='cart'>
         {/* Layou start */}
 <div className='text-center bg-breadcrumb'>
 <div className="title-page">
@@ -21,7 +31,12 @@ const Cart = () => {
         {/* Layou end */}
 
 {/* cart section  start */}
-<section className='page-cart'>
+{
+    basket.length === 0 ? 
+    <div>
+        Cart
+    </div> 
+    : <section className='page-cart'>
 <div className="container">
     {/* table for product start */}
     <div className="table-responsive">
@@ -42,7 +57,9 @@ const Cart = () => {
 {/* tbody start */}
 
 <tbody>
+
     {
+        
         basket && basket.map(product=>
             <tr className='cart_item'>
             <td className='product-thumbnail'>
@@ -69,7 +86,7 @@ const Cart = () => {
                 </div>
             </td>
             <td className='product-subtotal'>
-                <span>$56.00</span>
+                <span>${calculateProductTotal(product)}</span>
             </td>
             <td className='product-remove'>
                 <Link onClick={()=>deleteBasket(product)}>
@@ -106,7 +123,7 @@ const Cart = () => {
 <span>Total</span>
         </th>
         <td className='cart-amount'>
-<span><strong>$56.00</strong></span>
+<span><strong>${totalPrice()}</strong></span>
         </td>
     </tr>
 </tbody>
@@ -120,9 +137,13 @@ const Cart = () => {
 </div>
 
 </section>
+}
+
 {/* cart section  end */}
 
     </div>
+    </>
+   
   )
 }
 

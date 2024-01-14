@@ -33,9 +33,9 @@ const Cart = () => {
 {/* cart section  start */}
 {
     basket.length === 0 ? 
-    <div>
-        Cart
-    </div> 
+    <h2>
+        Cart is empty
+    </h2> 
     : <section className='page-cart'>
 <div className="container">
     {/* table for product start */}
@@ -112,7 +112,7 @@ const Cart = () => {
             <input type="submit"  value="Update Cart" className='button bg-color' />
     </div>
     <div className="continue-shopping1">
-        <Link>Continue Shopping</Link>
+        <Link to="/shop">Continue Shopping</Link>
     </div>
     <div className="cart-check">
         <h2 className="cart-title">CART TOTALS</h2>

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./index.scss"
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { AuthContext } from '../../context/authContext'
 const AccountPage = () => {
+  const { removeToken } = useContext(AuthContext)
+  const { decodedToken } = useContext(AuthContext)
+
   return (
 
     <>
@@ -10,8 +14,8 @@ const AccountPage = () => {
         <title>Account</title>
       </Helmet>
       <div id='account'>
-<p>Tu7k21xbe@Code.Edu.Az</p>
-<p>(not <strong>tu7k21xbe@code.edu.az?</strong>  <Link>Sign out</Link> ).
+<p>{decodedToken.email}</p>
+<p>(not <strong>{decodedToken.email}</strong>  <Link onClick={removeToken}>Sign out</Link> ).
 </p>
 <p>RECENT ORDERS</p>
 <p>You haven't placed any orders yet.</p>

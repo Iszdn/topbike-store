@@ -7,17 +7,24 @@ import { GrShop } from "react-icons/gr";
 import { WishlidtContext } from "../../../context/WishlistContext";
 import { Link } from "react-router-dom";
 import "./index.scss"
+import { AuthContext } from "../../../context/authContext";
+import { CiLogin } from "react-icons/ci";
 const Icons = () => {
   const { basket } = useContext(BasketContext);
   const { wishlist } = useContext(WishlidtContext);
+  const { decodedToken } = useContext(AuthContext)
   return (
     <div className="icons">
       <span>
         <IoSearch />
       </span>
-      <span>
-        <IoPersonOutline />
-      </span>
+      {
+        decodedToken ? ( <span>
+          <Link to="/account"><IoPersonOutline /></Link>
+        
+      </span>) : ( <span><Link to="/login"><CiLogin /></Link></span> )
+      }
+     
       <span>
        <Link to="/wishlist"> <FiHeart /></Link>
         <span className="cirkle">{wishlist.length}</span>

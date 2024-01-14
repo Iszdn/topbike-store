@@ -17,7 +17,7 @@ const Online = () => {
     
     <p className='use'>USE CODE “TOPBIKE30”</p>
     <div className="butoon">
-      <Link>SHOP NOW</Link>
+      <Link to="/shop">SHOP NOW</Link>
     </div>
 </div>
 </div>

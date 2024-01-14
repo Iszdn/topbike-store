@@ -11,11 +11,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BasketProvider>
       <WishlidtProvider>
-        {/* <AuthProvider> */}
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        {/* </AuthProvider> */}
+        <AuthProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+        </AuthProvider>
       </WishlidtProvider>
     </BasketProvider>
   </React.StrictMode>
